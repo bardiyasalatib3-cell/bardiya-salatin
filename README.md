@@ -48,3 +48,33 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=bardiyasalatib3-cell&theme=react-dark&bg_color=0d1117&hide_border=true&area=true" width="90%"/>
 </p>
+
+---
+
+## 📌 My Projects
+
+### 📚 Online Exam System
+A complete online examination system with PHP, MySQL, and JavaScript.
+
+**Features:**
+- 🔐 Multi-role login (Admin, Teacher, Student)
+- 👨‍🏫 Teacher panel for managing questions and exams
+- 👨‍🎓 Student panel for taking timed exams
+- 📊 Automatic scoring and result tracking
+- 🖼️ Image upload support for questions
+- 📄 PDF report generation
+- 📱 Fully responsive design
+
+**Technologies:** PHP, MySQL, JavaScript, HTML5, CSS3
+
+<a href="https://github.com/bardiyasalatib3-cell/online-exam-system">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=bardiyasalatib3-cell&repo=online-exam-system&theme=dark" />
+</a>
+
+---
+
+### 🔧 Other Projects
+- 🏫 **School Management System** - A website for managing schools online
+- 👤 **Personal Website** - A portfolio website to introduce myself
+- 📝 **Blog System** - A blog website built with Django
+- 🐍 **Python Guide** - Learning Python from scratch

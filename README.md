@@ -1,1 +1,1 @@
-# bardiya-salatin
+[bardiya]

@@ -1,0 +1,514 @@
+/* responsive.css - ریسپانسیو کامل برای تمام صفحات */
+
+* {
+    box-sizing: border-box
+}
+
+@media(max-width:1200px) {
+
+    .container,
+    .main-content {
+        padding: 0 15px
+    }
+
+    .exam-card {
+        max-width: 100%
+    }
+}
+
+@media(max-width:992px) {
+    .stats {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .students-table {
+        min-width: 700px
+    }
+
+    .question-table {
+        min-width: 700px
+    }
+
+    .hero h1 {
+        font-size: 32px
+    }
+}
+
+@media(max-width:768px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .features {
+        grid-template-columns: 1fr
+    }
+
+    .hero {
+        padding: 30px 20px
+    }
+
+    .hero h1 {
+        font-size: 28px
+    }
+
+    .hero p {
+        font-size: 14px
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .btn-large {
+        width: 100%;
+        text-align: center;
+        justify-content: center
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap
+    }
+
+    .nav-btn {
+        padding: 4px 12px;
+        font-size: 12px
+    }
+
+    .datetime-row {
+        flex-direction: column;
+        gap: 15px
+    }
+
+    .datetime-field {
+        width: 100%
+    }
+
+    .time-info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        width: 100%
+    }
+
+    .time-value {
+        font-size: 18px;
+        word-break: break-all
+    }
+
+    .option-item {
+        flex-wrap: wrap;
+        padding: 10px 12px
+    }
+
+    .option-item span {
+        width: 100%;
+        margin-bottom: 5px
+    }
+
+    .correct-radio {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%
+    }
+
+    .timer-display {
+        font-size: 32px;
+        padding: 8px 20px;
+        letter-spacing: 3px
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .btn-nav {
+        width: 100%;
+        text-align: center;
+        padding: 12px
+    }
+
+    .form-card {
+        padding: 15px
+    }
+
+    .form-title {
+        font-size: 18px
+    }
+
+    .footer {
+        font-size: 11px;
+        padding: 15px
+    }
+
+    .question-card {
+        padding: 15px
+    }
+
+    .question-text {
+        font-size: 15px
+    }
+
+    .option {
+        flex-wrap: wrap;
+        padding: 10px 12px
+    }
+
+    .option-text {
+        font-size: 13px
+    }
+
+    .result-card {
+        padding: 25px
+    }
+
+    .score-circle {
+        width: 140px;
+        height: 140px
+    }
+
+    .score-number {
+        font-size: 36px
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        max-width: 95%
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px
+    }
+
+    .stat-number {
+        font-size: 28px
+    }
+
+    .exam-info {
+        font-size: 12px
+    }
+}
+
+@media(max-width:576px) {
+    .stats {
+        grid-template-columns: 1fr
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr
+    }
+
+    .students-table {
+        min-width: 100%
+    }
+
+    .students-table th,
+    .students-table td {
+        padding: 8px 4px;
+        font-size: 11px;
+        display: block;
+        text-align: right;
+        width: 100%
+    }
+
+    .students-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px
+    }
+
+    .students-table th {
+        display: none
+    }
+
+    .students-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 40%;
+        color: #64748b
+    }
+
+    .students-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #f1f5f9
+    }
+
+    .students-table td:last-child {
+        border-bottom: none
+    }
+
+    .question-table {
+        min-width: 100%
+    }
+
+    .question-table th,
+    .question-table td {
+        padding: 8px 4px;
+        font-size: 12px
+    }
+
+    .question-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px
+    }
+
+    .question-table th {
+        display: none
+    }
+
+    .question-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #f1f5f9
+    }
+
+    .question-table td:last-child {
+        border-bottom: none
+    }
+
+    .question-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 40%;
+        color: #64748b
+    }
+
+    .scores-table {
+        min-width: 100%
+    }
+
+    .scores-table th,
+    .scores-table td {
+        padding: 8px 4px;
+        font-size: 11px
+    }
+
+    .scores-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 10px
+    }
+
+    .scores-table th {
+        display: none
+    }
+
+    .scores-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #f1f5f9
+    }
+
+    .scores-table td:last-child {
+        border-bottom: none
+    }
+
+    .scores-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 40%;
+        color: #64748b
+    }
+
+    .login-card {
+        padding: 25px 20px
+    }
+
+    .login-header h2 {
+        font-size: 22px
+    }
+
+    .login-header .icon {
+        font-size: 50px
+    }
+
+    .user-item,
+    .demo-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 12px
+    }
+
+    .user-info {
+        justify-content: center
+    }
+
+    .detail-card {
+        padding: 20px
+    }
+
+    .detail-header h2 {
+        font-size: 20px
+    }
+
+    .score-circle {
+        width: 100px;
+        height: 100px
+    }
+
+    .score-number {
+        font-size: 28px
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 5px
+    }
+
+    .answer-item {
+        font-size: 11px;
+        padding: 6px
+    }
+
+    .timer-display {
+        font-size: 24px;
+        padding: 6px 15px
+    }
+
+    .modal-content {
+        padding: 15px
+    }
+
+    .modal-header h3 {
+        font-size: 18px
+    }
+
+    .input-group input {
+        padding: 8px 12px;
+        font-size: 13px
+    }
+
+    .btn-sm,
+    .btn-edit,
+    .btn-delete,
+    .btn-edit-row,
+    .btn-delete-row {
+        padding: 2px 8px;
+        font-size: 10px
+    }
+
+    .password-cell {
+        font-size: 10px;
+        padding: 2px 6px
+    }
+
+    .score-badge {
+        font-size: 11px;
+        padding: 2px 8px
+    }
+
+    .stats-value {
+        font-size: 28px
+    }
+
+    .stats-title {
+        font-size: 14px
+    }
+
+    .ranking-table th,
+    .ranking-table td {
+        padding: 6px;
+        font-size: 11px
+    }
+
+    .ranking-table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 8px
+    }
+
+    .ranking-table th {
+        display: none
+    }
+
+    .ranking-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px solid #f1f5f9
+    }
+
+    .ranking-table td:last-child {
+        border-bottom: none
+    }
+
+    .ranking-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #64748b
+    }
+}
+
+@media(max-width:400px) {
+    body {
+        font-size: 12px
+    }
+
+    h1 {
+        font-size: 20px !important
+    }
+
+    h2 {
+        font-size: 18px !important
+    }
+
+    .nav-btn {
+        padding: 3px 8px;
+        font-size: 10px
+    }
+
+    .btn-large,
+    .btn-save-time {
+        padding: 8px 16px;
+        font-size: 13px
+    }
+
+    .timer-display {
+        font-size: 20px;
+        padding: 5px 10px
+    }
+
+    .hero h1 {
+        font-size: 22px
+    }
+
+    .stat-number {
+        font-size: 24px
+    }
+
+    .main-content {
+        padding: 0 10px
+    }
+}
